@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta name="description" content="Personal Website" />
+        <meta name="keywords" content="Developers, github, html, python" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="favicon.ico">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <!-- title -->
+        <title>Multiplication Table Generator by Prabakar</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>Multiplication Table Generator</h1>
+            </div>
+            <div id="content">
+                <div id="nav">
+                <h3>Also, see</h3>
+                <ul>
+                    <li><a href="main.html">Home</a></li><br>
+                    <li><a href="tables.html" class="selected">Multiplication Table</a></li><br>
+                    <li><a href="fib.html">Fibonacci Sequence Generator</a></li><br>
+                </ul>
+            </div>
+                <script>
+                    var num = prompt("Enter the number to display multiplication table", "0")
+                    var limit = prompt("Enter the limit of multiples", "0")
+                    
+                    var num = parseInt(num)
+                    var i = 0;
+                    
+                    document.write('<table border="1", cellspacing="0", align="center">');
+                    for(i=0;i<=limit;i++)
+                    {
+                        document.write("<tr><td>" + num + " x " + i + " = " + num*i + "</td></tr>");
+                    }
+                    
+                    document.write("</table>")
+                </script>
+            </div>
+            <div id="footer">
+                Copyright &copy; 2019 Prabakar
+            </div>
+        </div>
+    </body>
+</html>
